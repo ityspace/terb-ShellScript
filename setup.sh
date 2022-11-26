@@ -26,12 +26,14 @@ else
 fi
 done
 
-#Check permissions
+#Check
 if [ -f "$bin/sudo" ]; then
   if [ -f "$bin/su" ]; then
     echo -e ${yellow}"若无法安装，请手动运行'sudo' 或 'su' 以授权Terb安装权限"${done}
   fi
 fi
+
+test -d ~/.config || mkdir ~/.config
 
 #func
 #getStart
