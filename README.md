@@ -5,7 +5,7 @@ Start
 -----
 
 ```
-curl -sLf https://raw.githubusercontent.com/ityspace/terb/main/set-up.sh | bash
+curl -sLf https://raw.githubusercontent.com/ityspace/terb/main/setup.sh | bash
 ```
 
 Portable version: https://github.com/ityspace/TerminalBlog
