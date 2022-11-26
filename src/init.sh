@@ -19,4 +19,4 @@ echo "AUTHOR=\"$Author\"" >> config
 
 cp ~/.config/terb/src/rss.xsl public/rss.xsl
 
-echo "\033[36mFinish!\033[0m"
+echo -e "\033[36mFinish!\033[0m"
