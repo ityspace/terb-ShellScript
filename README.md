@@ -40,11 +40,18 @@ Write post
 turb post
 ```
 
+Fix
+---
+
+```
+terb fix
+```
+
 Help
 ---
 
 ```
-terb help
+terb
 ```
 
 Notes:
