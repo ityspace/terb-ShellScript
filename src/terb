@@ -1,0 +1,34 @@
+#!/bin/bash
+
+if [ x"$1" = x ]; then
+function about { 
+  echo "Welcome to Terb!"
+  echo "terb [command]"
+  echo "     ---------"
+  echo "     |init    |"
+  echo "     |build   |"
+  echo "     |serve   |"
+  echo "     |post    |"
+  echo "     |fix     |"
+  echo "     -----/--- "
+}
+about
+
+elif [ $1 == init ]; then
+	bash ~/.condig/terb/src/init.sh
+
+elif [ $1 == build ]; then
+	bash ~/.condig/terb/src/build.sh
+elif [ $1 == serve ]; then
+	bash ~/.condig/terb/src/serve.sh
+elif [ $1 == post ]; then
+	bash ~/.condig/terb/src/post.sh
+elif [ $1 == fix ]; then
+	echo "Fixing ..."
+	rm -rf ~/.config/terb
+	git clone https://github.com/ityspace/terb ~/.config/terb
+else
+	echo -e "\033[31m $EI2 Input terb for help!\033[0m"
+	exit 1
+
+fi
