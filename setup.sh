@@ -41,7 +41,7 @@ test -d ~/.config || mkdir ~/.config
 Download() {
   git clone https://github.com/ityspace/terb ~/.config/terb
   chmod 777 ~/.config/terb
-  curl https://raw.githubusercontent.com/ityspace/terb/main/src/terb $PREFIX/bin/terb
+  curl https://raw.githubusercontent.com/ityspace/terb/main/src/terb --output $PREFIX/bin/terb
 }
 echo -e "${notice}Your installation will started in few sec ..."
 echo -e "${notice}Cloning the project of TERB ..."
