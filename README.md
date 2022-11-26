@@ -24,7 +24,7 @@ Run
 terb serve
 ```
 
-Open url http://localhost:8999 to view.
+Open url http://localhost:8000 to view.
 
 Build
 ---
