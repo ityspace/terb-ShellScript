@@ -12,8 +12,6 @@ for file in $POST_DIR*; do
 TITLE=$(head -n 2 $file | tail -n 1)
 DATE=$(head -n 1 $file	)
 
-source config.sh
-
 sed -i '1, 2d' $file
 
 sh ~/.config/terb/src/lib/markdown.sh $file > $(echo "./tmp$file" | sed 's/tmp\/posts//');
