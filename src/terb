@@ -15,14 +15,14 @@ function about {
 about
 
 elif [ $1 == init ]; then
-	bash ~/.condig/terb/src/init.sh
+	bash ~/.config/terb/src/init.sh
 
 elif [ $1 == build ]; then
-	bash ~/.condig/terb/src/build.sh
+	bash ~/.config/terb/src/build.sh
 elif [ $1 == serve ]; then
-	bash ~/.condig/terb/src/serve.sh
+	bash ~/.config/terb/src/serve.sh
 elif [ $1 == post ]; then
-	bash ~/.condig/terb/src/post.sh
+	bash ~/.config/terb/src/post.sh
 elif [ $1 == fix ]; then
 	echo "Fixing ..."
 	rm -rf ~/.config/terb
